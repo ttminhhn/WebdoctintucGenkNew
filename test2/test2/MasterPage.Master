@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="test2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <script src="ckeditor/ckeditor.js"></script>
+    <link href="css/masterpage.css" rel="stylesheet" />
+    <script src="js/checkform.js"></script>
+</head>
+<body>
+    <form runat="server">
+   	 <div id="header">
+		<div id="dautrang">
+			<div class="container">  
+			  
+            <!-- dangnhap -->
+            <div id="anhlogo"></div>
+               <%if ((Boolean)Session["admin"] == false)
+                   {
+                       %>
+                <div class="abc">
+                    <div id="dangnhap">
+                    <a href="Login.aspx" title="Đăng nhập"> Đăng Nhập </a>
+                    </div>
+                    <div id="dangky">
+                    <a href="register.aspx" title="Đăng Kí"> Đăng Ký</a>
+                    </div>
+                  </div> 
+               <%}
+                else
+                {
+                       %> 
+                 <div class="abc">
+                    <div id="dangnhap">
+                    <a href="Logout.aspx" title="Đăng Xuất"> Thoát </a>
+                    </div>
+                    <div id="dangky">
+                        <a href="addnews.aspx" title="Thêm bản tin"> Thêm mới </a>
+                        </div>
+                 </div> 
+                <% }%>
+                <asp:Button ID="Btn" runat="server" class="test" />
+                <input type="text" name="keysearch" class="bar" value="">
+               &nbsp;</div>
+                <div> <asp:Label ID="Lbthongbao" runat="server" Text=""></asp:Label></div>
+           
+            
+         </div>
+        </div><!-- dautrang -->
+
+    </div><!-- header -->
+
+     <div id="menudautrang">
+
+                <ul class="menungang">
+					<div class="container">
+                    <li class="menu1"><a href="index.aspx">TRANG CHỦ</a></li>
+                     <asp:Repeater ID="rpbantin" runat="server">
+                            <ItemTemplate>
+                                <li class="menu1"><a href="category.aspx?idbantin=<%# Eval("idbantin") %>"><%# Eval("noidung") %></a></li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                	</div>
+                </ul>
+     </div><!-- menu --> 
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ></asp:ContentPlaceHolder>
+       <div id="footer">
+           <div class="container">
+                  <div id="anhlogo"></div>
+            </div>
+                 <div id="menucuoitrang">
+                            <ul class="menungang2">
+                                <asp:Repeater ID="rpbantin2" runat="server">
+                                    <ItemTemplate>
+                                        <li class="menu2"><a href="category.aspx?idbantin=<%# Eval("idbantin") %>"><%# Eval("noidung") %></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>
+                </div><!-- menu --> 
+    		   </div>
+    	</div>  
+          <script src="js/checkform.js"></script>
+   </form>
+ 
+</body>
+</html>

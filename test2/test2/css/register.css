@@ -1,0 +1,170 @@
+﻿/*khu vực đầu trang*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+}
+
+.container {
+    margin: auto;
+    height: 100%;
+    width: 1000px;
+}
+
+
+/*khu vực giữa trang*/
+.title-gioithieu {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+    .title-gioithieu h1 {
+        text-align: center;
+        padding: 5px 15px 10px 15px;
+        border-bottom: 1px solid #007f74;
+        text-transform: uppercase;
+        color: #007f74;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-size: 28px;
+    }
+
+.userbox {
+    width: 335px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    height: 33px;
+    width: 332px;
+    margin-bottom: 10px
+}
+
+#first_name {
+}
+
+.label-fname {
+    background-color: #F8F8F8 !important;
+    border: solid 1px #E7E7E7;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icon/userico.png)no-repeat center center;
+    float: left;
+}
+
+.text {
+    border: solid 1px #E7E7E7;
+    height: 28px;
+    width: 290px;
+    float: left;
+    padding-left: 7px;
+}
+
+.label-lname {
+    background-color: #F8F8F8 !important;
+    border: solid 1px #E7E7E7;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icon/userico.png)no-repeat center center;
+    float: left;
+}
+
+.label-email {
+    background-color: #F8F8F8 !important;
+    border: solid 1px #E7E7E7;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icon/email.png)no-repeat center center;
+    float: left;
+}
+
+.label-pass {
+    background-color: #F8F8F8 !important;
+    border: solid 1px #E7E7E7;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icon/pass.png)no-repeat center center;
+    float: left;
+}
+
+.action_bottom .btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    background: #046158;
+    text-align: center;
+    border: none;
+}
+
+    .action_bottom .btn:hover {
+        background: #059185;
+        color: #fff;
+    }
+
+.req_pass {
+    margin-top: 10px;
+}
+
+    .req_pass a {
+        text-decoration: none;
+        color: #059185 !important;
+    }
+
+        .req_pass a:hover {
+            color: #059185 !important;
+        }
+
+.come-back {
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+}
+/*khu vực cuoi trang*/
+footer {
+    height: 450px;
+}
+
+.bottom-bar {
+    border-top: solid 2px #c7c7c7;
+    position: relative;
+    height: 62px;
+    background-color: #f2f2f2;
+}
+
+#menucuoitrang {
+    height: 70px;
+    border-top: solid 1px #dbdbdb;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+    #menucuoitrang ul li {
+        background-color: #f2f2f2;
+        text-decoration: none;
+        display: inline-table;
+    }
+
+.menu2 a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    border-right: 1px solid black;
+    SFUEurostileCond;
+    padding: 9px 20px 10px 20px;
+}
+
+.athur {
+    background-color: #f2f2f2;
+    height: 200px;
+}

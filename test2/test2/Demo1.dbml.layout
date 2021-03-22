@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Demo">
+  <DataContextMoniker Name="/DemoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b0feb97d-5fde-411f-a9e1-3ab5e6bc980c" absoluteBounds="0.75, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DemoDataContext/Bantin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f755133-af36-4a6d-8a98-5cfa7f8cb77b" absoluteBounds="0.765, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f18bf902-3846-4934-8209-68b5bcee5380" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DemoDataContext/ChiTiet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83a1424c-1a6f-4f97-bc76-dc67cbfe866d" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bca0f2b3-f747-46c9-b750-d651bc52481b" absoluteBounds="0.75, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DemoDataContext/DangNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d245d01-8d16-4d4e-9e02-e852dceb1032" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DemoDataContext/Bantin/Bantin_ChiTiet" />
+      <nodes>
+        <classShapeMoniker Id="b0feb97d-5fde-411f-a9e1-3ab5e6bc980c" />
+        <classShapeMoniker Id="f18bf902-3846-4934-8209-68b5bcee5380" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
